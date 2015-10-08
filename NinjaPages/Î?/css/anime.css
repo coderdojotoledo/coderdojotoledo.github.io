@@ -1,0 +1,63 @@
+.animebody {
+	background: url(http://orig06.deviantart.net/739b/f/2008/142/5/e/conglomerate_of_anime_shows_by_soulofsolaria.jpg) center center no-repeat fixed;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec-nav {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .70);
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    height: 32px;
+    display: flex;
+    padding: 0;
+    margin-right: 900px;
+}
+.sec-nav > ul {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sec-nav > ul > li {
+    display: flex;
+}
+
+.sec-nav > ul > li > a {
+    padding: 0 1rem;
+    display: flex;
+    text-transform: full-size-kana;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sec-nav > ul > li > a:hover {
+    color: #1b90be;
+    text-decoration: none;
+}
+
+.anime {
+	text-align: center;
+	color: lightblue;
+	border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-right: 550px;
+	background: rgba(0, 0, 0, .70);
+}
+
+.discreet {
+	text-align: center;
+	color: white;
+	border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-right: 550px;
+	background: rgba(0, 0, 0, .70);
+}

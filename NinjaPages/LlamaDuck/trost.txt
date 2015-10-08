@@ -1,0 +1,4 @@
+.trost {
+	backround: url(http://media.giphy.com/media/kkU2r5ei9ctaM/giphy.gif)
+
+}

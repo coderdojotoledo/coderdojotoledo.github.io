@@ -1,0 +1,53 @@
+.slogan {
+    font-family:"latolight", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    background-color: rgba(0, 0, 0, .30);
+}
+
+.about {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+p {
+	margin-left: 2rem;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, .30);
+	font-family:"latolight", Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.venues, .potter {
+	margin-left: 32px;
+	color: white;
+}
+
+footer {
+    text-align: center;
+	padding: 30px;
+	color: white;
+	background-color: rgba(0, 0, 0, .30);
+}
+
+ul {
+    list-style-type: none;
+}
+
+facebook {
+	width: 5px;
+	height: 5px;
+}
+
+.indexbody {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/5/53/Skyline_of_Toledo,_Ohio.jpg) center center no-repeat fixed;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, .60);
+}
+
+body {
+	background: url(https://38.media.tumblr.com/tumblr_lsudn1Xqjy1qzunn4o1_400.gif) center center no-repeat;
+	background-size: cover;
+	color: white;
+}

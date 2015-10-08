@@ -1,0 +1,1 @@
+var success = alert("Thank you for your interest in CoderDojo Toledo. You will receive our newsletter soon!")
