@@ -1,0 +1,32 @@
+/**
+ *
+ * http://humanstxt.org
+ *
+ * An initiative to know the creators of the  website.
+ *
+ * Last Update: 3/3/2016
+ *
+ */
+
+/**
+ *
+ * TEAM
+ *
+ * Keep a running log of everyone who's been in
+ * here. Add your name, personal email, and Twitter.
+ *
+ */
+
+Designer/Developer: Dan Paquette
+Email: dm.paquette@gmail.com
+Twitter: @danpaquette
+
+/**
+ *
+ * SITE
+ *
+ */
+
+Standards: HTML, CSS, SMACSS, RSS 2.0, Open Graph
+Components: Brand Colors, FastClick, jQuery, LWM, Normalize
+Software: JetBrains, Github, Node, NPM, Grunt, Bower, Vagrant
