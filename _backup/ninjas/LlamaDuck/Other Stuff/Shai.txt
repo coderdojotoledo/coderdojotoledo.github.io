@@ -1,5 +1,0 @@
-<!DOCTYPE html>
-	<html>
-		<body>
-		<body bgcolor"#B404AE">
-			<a href="Home.html">Home Page</a>------<a href="Leothecat.html">Leo's Page</a>------<a href="Velociraptor.html">Velociraptor Page</a>------<a href="CAT.html">Cat Page</a>------<a href="Drawings.html">Drawings</a>

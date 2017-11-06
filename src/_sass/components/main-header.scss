@@ -1,0 +1,7 @@
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

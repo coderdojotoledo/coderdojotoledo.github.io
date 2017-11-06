@@ -1,0 +1,21 @@
+ - name: Dan Paquette
+   company: Satelytics
+   title: Digital Content Coordinator
+   social:
+     linkedin: https://www.linkedin.com/in/danpaquette/
+     twitter: https://twitter.com/danpaquette
+     link: https://danpaquette.com/
+ - name: Adam Amrine
+   company: Adro Solutions
+   title: Lead Consultant/Developer
+   social:
+     linkedin: https://www.linkedin.com/in/adam-amrine-bb735b2/
+     twitter: https://twitter.com/AmrineA
+     link: https://adrosolutions.com/
+ - name: Josh Knack
+   company: Adro Solutions
+   title: Sr. Software Developer
+   social:
+     linkedin: https://www.linkedin.com/in/joshknack/
+     twitter: https://twitter.com/jknack
+     link: https://adrosolutions.com/

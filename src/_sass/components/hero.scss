@@ -1,0 +1,79 @@
+.hero {
+  position: relative;
+  padding: 4rem 2rem;
+  color: $white;
+  background: url('../img/content/coderdojo-ninjas.jpg') center center no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - #{$main-navigation-height});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($black, .5);
+}
+
+.hero * {
+  position: relative;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .hero {
+    text-align: left;
+  }
+}
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .hero {
+    min-height: calc(100vh - #{$main-navigation-height-lg});
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    order: -1;
+  }
+}
+
+.hero .hero-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 200;
+  max-width: 25rem;
+}
+
+.hero .hero-subtitle {
+  font-weight: 200;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+  max-width: 25rem;
+  line-height: 1.5;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .hero .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero .hero-subtitle {
+    font-size: 1.75rem;
+  }
+}
+
+.hero .btn {
+  margin: 1rem 0;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .hero .btn-light {
+    margin-right: 2rem;
+  }
+}

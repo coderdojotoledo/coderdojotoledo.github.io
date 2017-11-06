@@ -1,0 +1,60 @@
+.footer {
+  background: $bootstrap-light;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  flex-direction: column;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .footer > .container {
+    height: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer .footer-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .footer-navigation > li > a {
+  margin-right: 1rem;
+  font-size: .9rem;
+  color: $bootstrap-dark;
+}
+
+.footer .footer-navigation > li > a:hover {
+  color: #717e8c;
+  text-decoration: none;
+}
+
+.footer .footer-logo {
+  display: block;
+  width: 10rem;
+  margin-bottom: .5rem;
+}
+
+.footer .footer-logo img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .footer .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer .footer-navigation > li > a {
+    margin: 0 .5rem;
+  }
+}

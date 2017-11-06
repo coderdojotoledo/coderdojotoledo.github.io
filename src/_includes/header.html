@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en">
+  <head>
+
+    <!-- Google Analytics -->
+
+    <!-- Technical Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="home" href="{{site.data.global.baseurl}}" />
+    <link rel="canonical" href="{{site.data.global.baseurl}}{{page.permalink}}" />
+
+    <!-- Page Details -->
+    <title>{{page.title}}</title>
+    <meta name="description" content="{{page.description}}" />
+
+    <!-- Humans and Robots -->
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/meta/shortcut/shortcut-32x32.png" />
+    <link rel="icon" sizes="196x196" href="/img/meta/shortcut/shortcut-196x196.png" />
+
+    <!-- Apple Meta Information -->
+    <link rel="apple-touch-icon-precomposed" href="/img/meta/apple/iphone-standard-60x60.png" sizes="60x60" />
+    <link rel="apple-touch-icon-precomposed" href="/img/meta/apple/iphone-retina-120x120.png" sizes="120x120" />
+    <link rel="apple-touch-icon-precomposed" href="/img/meta/apple/ipad-standard-76x76.png" sizes="76x76" />
+    <link rel="apple-touch-icon-precomposed" href="/img/meta/apple/ipad-retina-152x152.png" sizes="152x152" />
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:site_name" content="{{site.data.global.sitename}}" />
+    <meta property="og:description" content="{{page.description}}" />
+    <meta property="og:image" content="/img/meta/open-graph/og-600x600.png" />
+    <meta property="og:url" content="{{site.data.global.baseurl}}{{page.permalink}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards Markup -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{{page.title}}" />
+    <meta property="twitter:image" content="/img/meta/open-graph/og-600x600.png" />
+    <meta property="twitter:description" content="{{page.description}}" />
+    <meta property="twitter:site" content="@{{site.data.contact.twitter | remove: 'https://twitter.com/'}}" />
+
+    <!-- Remote CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet"  href="/css/styles.css" />
+
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="navbar navbar-expand-lg justify-content-between navbar-light bg-light main-navigation">
+        <a class="navbar-brand" href="/">
+          <img src="/img/logo/cdt-logo-b.svg" alt="{{site.data.global.sitename}}">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList" aria-controls="navbarList" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarList">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mentors">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#locations">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item nav-item-cta">
+              <a class="btn btn-outline-dark" href="#join">Attend a Session</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      {% if page.homepage %}
+        {% include _components/hero.html %}
+      {% endif %}
+    </header>

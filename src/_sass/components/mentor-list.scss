@@ -1,0 +1,66 @@
+.mentor-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mentor-list > .mentor-list-item {
+  margin: 1rem;
+  width: 100%;
+  flex: 1 1 auto;
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: #{map-get($breakpoints, sm)}) {
+  .mentor-list > .mentor-list-item {
+    max-width: 12.5rem;
+  }
+}
+
+.mentor-list .mentor-image {
+  margin: 0 auto 1.5rem;
+  display: block;
+  width: 75%;
+  height: auto;
+  filter: grayscale(100%);
+  border-radius: 50%;
+}
+
+.mentor-list .mentor-name {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.mentor-list .mentor-job {
+  font-size: .9rem;
+  margin-bottom: .25rem;
+  opacity: .65;
+}
+
+.mentor-list .mentor-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-list .mentor-social-list > .mentor-social-item {
+  margin: 0 .25rem;
+}
+
+.mentor-list .mentor-social-list > .mentor-social-item > a {
+  color: darken($white, 40%);
+}
+
+.mentor-list .mentor-social-list > .mentor-social-item > a:hover {
+  color: $bootstrap-dark;
+  text-decoration: none;
+}

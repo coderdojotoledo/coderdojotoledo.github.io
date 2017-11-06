@@ -1,0 +1,76 @@
+---
+title: "Toledo Web Professionals"
+description: "Toledo Web Professionals organizes free, open networking meetups each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education."
+homepage: true
+---
+{% include header.html %}
+
+<div class="section-primary" id="about">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-5 col-md-6">
+        <h3 class="section-heading">What is CoderDojo?</h3>
+        <p>
+          CoderDojo is a global movement of free, volunteer-led, community-based programming and technology clubs for
+          young people. At a dojo, young people between the ages 7 and 17 learn how to code, develop
+          websites, apps, programs, and games. We explore technology in an informal and creative environment under
+          the guidance of local mentors and professionals.
+        </p>
+        <p>
+          There are thousands of CoderDojos in cities all over the world, and we're here to serve Toledo in supporting
+          the next generation of programmers and technologists. <a href="https://coderdojo.com/" target="_blank">Learn more about CoderDojo.</a>
+        </p>
+        <a class="btn btn-outline-dark" href="#join">Attend a Session</a>
+      </div>
+      <figure class="col-lg-5 col-md-6 image-frame">
+        <a class="image-frame-image" target="_blank" href="/img/content/coderdojo-mosaic.jpg">
+          <img class="img-fluid" src="/img/content/coderdojo-mosaic.jpg" alt="CoderDojo" />
+        </a>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="section-secondary" id="mentors">
+  <div class="container">
+    <h3 class="section-heading text-center">
+      Our Mentors
+    </h3>
+    <p class="section-introduction">
+      Here's our distinguished mentors who help by passing on their knowledge. Interested in mentoring?
+      <a href="#contact">Get in touch</a>!
+    </p>
+    <ul class="mentor-list">
+      {% for mentor in site.data.mentors %}
+        <li class="mentor-list-item">
+          <img class="mentor-image" src="/img/mentors/{{mentor.name | slugify}}.jpg" alt="{{mentor.name}}" />
+          <h4 class="mentor-name">{{ mentor.name }}</h4>
+          <p class="mentor-job">
+            {{ mentor.title }} at {{ mentor.company }}
+          </p>
+          <ul class="mentor-social-list">
+            {% for network in mentor.social %}
+            <li class="mentor-social-item">
+              <a class="fa fa-{{network[0]}}" target="_blank" href="{{network[1]}}"></a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="section-primary text-center" id="locations">
+  <div class="container">
+    <h3 class="section-heading text-center">
+      Locations
+    </h3>
+    <p class="section-introduction">
+      Right now, we only have one location, but hopefully soon we'll be bringing many more to Toledo!
+    </p>
+    <a class="btn btn-outline-dark" href="#join">Attend a Session</a>
+  </div>
+</div>
+
+{% include footer.html %}

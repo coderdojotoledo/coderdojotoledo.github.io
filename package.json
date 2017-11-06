@@ -1,0 +1,34 @@
+{
+  "name": "coderdojotoledo.github.io",
+  "version": "1.0.0",
+  "description": "Website for coderdojotoledo.github.io.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "grunt --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdojotoledo/coderdojotoledo.github.io.git"
+  },
+  "keywords": [
+    "theme",
+    "jekyll",
+    "coderdojo",
+    "coderdojo toledo",
+    "template"
+  ],
+  "author": "CoderDojo Toledo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/coderdojotoledo/coderdojotoledo.github.io/issues"
+  },
+  "homepage": "https://github.com/coderdojotoledo/coderdojotoledo.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jekyll": "^0.4.6"
+  }
+}
