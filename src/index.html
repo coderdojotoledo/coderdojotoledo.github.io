@@ -67,10 +67,55 @@ homepage: true
       Locations
     </h3>
     <p class="section-introduction">
-      Right now, we only have one location, but hopefully soon we'll be bringing many more to Toledo!
+      CoderDojo Toledo has sessions every Saturday at Redsson's offices in downtown Toledo.
     </p>
-    <a class="btn btn-outline-dark" href="#join">Attend a Session</a>
+    <ul class="locations-list">
+      {% for location in site.data.locations %}
+        <li class="locations-list-item locations-{{location.name | slugify}}">
+          <h4 class="location-name">{{location.name}}</h4>
+          <p class="location-address">{{location.address}}</p>
+          <a class="btn btn-light" target="_blank" href="{{location.directions}}">
+            Get Directions
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
+</div>
+
+<div class="section-secondary text-center" id="events">
+  <h3 class="section-heading text-center">
+    Events
+  </h3>
+  <p class="section-introduction">
+    Events are held every Saturday from noon to 3:00pm barring holidays or special circumstances.
+  </p>
+</div>
+
+<div class="section-tertiary text-center contact-banner" id="contact">
+  <h2>{{site.data.contact.email | remove: "mailto:"}}</h2>
+  <ul class="social-media-list">
+    <li class="social-media-list-item">
+      <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.twitter}}">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li class="social-media-list-item">
+      <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.facebook}}">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li class="social-media-list-item">
+      <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.github}}">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    <li class="social-media-list-item">
+      <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.email}}">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
 {% include footer.html %}
