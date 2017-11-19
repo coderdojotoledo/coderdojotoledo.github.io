@@ -4,7 +4,7 @@
  *
  * An initiative to know the creators of the  website.
  *
- * Last Update: 3/3/2016
+ * Last Update: 10/22/2017
  *
  */
 
@@ -27,6 +27,6 @@ Twitter: @danpaquette
  *
  */
 
-Standards: HTML, CSS, SMACSS, RSS 2.0, Open Graph
-Components: Brand Colors, FastClick, jQuery, LWM, Normalize
-Software: JetBrains, Github, Node, NPM, Grunt, Bower, Vagrant
+Standards: HTML, CSS, Open Graph
+Components: jQuery, Bootstrap
+Software: JetBrains, Github, Node, NPM, Grunt
