@@ -1,0 +1,40 @@
+.event-item {
+  display: flex;
+  flex-direction: column;
+  background: $bootstrap-dark;
+  margin: 0 0 2rem 0;
+  color: $white;
+  padding: 1.5rem;
+  position: relative;
+  min-height: 20rem;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.event-item * {
+  position: relative;
+}
+
+.event-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: brightness(.3) grayscale(.25);
+}
+
+.event-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.event-details {
+
+}
+
+.event-item.event-redsson-25-huron::before {
+  background: url('/img/locations/locations-redsson-25-huron.jpg') center center no-repeat;
+  background-size: cover;
+}

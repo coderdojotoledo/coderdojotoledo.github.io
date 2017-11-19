@@ -1,0 +1,33 @@
+.faq-list {
+  margin: 0 0 -2rem 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.faq-list-item {
+  margin-bottom: 2rem;
+}
+
+.faq-list-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.faq-list-answer {
+  margin: 0;
+}
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .faq-list-item {
+    width: calc(50% - 2.5rem);
+  }
+  .faq-list-item:nth-child(odd) {
+    margin-right: 5rem;
+  }
+}
+
+
+

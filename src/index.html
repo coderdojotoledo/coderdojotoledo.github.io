@@ -1,6 +1,6 @@
 ---
-title: "Toledo Web Professionals"
-description: "Toledo Web Professionals organizes free, open networking meetups each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education."
+title: "CoderDojo Toledo"
+description: "CoderDojo is a global movement of free, volunteer-led, community-based programming and technology clubs for young people. At a dojo, young people between the ages 7 and 17 learn how to code, develop websites, apps, programs, and games. "
 homepage: true
 ---
 {% include header.html %}
@@ -19,8 +19,10 @@ homepage: true
         <p>
           There are thousands of CoderDojos in cities all over the world, and we're here to serve Toledo in supporting
           the next generation of programmers and technologists. <a href="https://coderdojo.com/" target="_blank">Learn more about CoderDojo.</a>
+          <br />
+          <br />
+          <a class="btn btn-outline-dark" href="#join">Attend a Session</a>
         </p>
-        <a class="btn btn-outline-dark" href="#join">Attend a Session</a>
       </div>
       <figure class="col-lg-5 col-md-6 image-frame">
         <a class="image-frame-image" target="_blank" href="/img/content/coderdojo-mosaic.jpg">
@@ -83,17 +85,51 @@ homepage: true
   </div>
 </div>
 
-<div class="section-secondary text-center" id="events">
-  <h3 class="section-heading text-center">
-    Events
-  </h3>
-  <p class="section-introduction">
-    Events are held every Saturday from noon to 3:00pm barring holidays or special circumstances.
-  </p>
+<div class="section-secondary text-center" id="faq">
+  <div class="container">
+    <h3 class="section-heading text-center">
+      FAQ
+    </h3>
+    <p class="section-introduction">
+      Answers to frequently asked questions by new parents and children attending CoderDojo.
+    </p>
+    <ul class="faq-list">
+      {% for faq in site.data.faq %}
+      <li class="faq-list-item">
+        <h4 class="faq-list-question">{{faq.question}}</h4>
+        <p class="faq-list-answer">{{faq.answer}}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="section-primary text-center" id="attend">
+  <div class="container">
+    <h3 class="section-heading text-center">
+      Attend a Session
+    </h3>
+    <p class="section-introduction">
+      Here are the upcoming CoderDojo sessions. No RSVP or registration necessary, just show up and get you started!
+    </p>
+    <div class="row">
+      {% for event in site.data.events %}
+        <div class="col-sm-12 col-md-6 col-xl-4">
+          <div class="event-item event-{{event.location | slugify}}">
+            <h4 class="event-name">{{event.name}}</h4>
+            <p class="event-details">{{event.address}}, <time>{{event.time}}</time></p>
+            <a class="btn btn-outline-light" target="_blank" href="{{event.more}}">More Info</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <a class="btn btn-lg btn-outline-dark" target="_blank" href="http://toledotechevents.org/events/tag/coderdojo">See All Upcoming Events</a>
+  </div>
 </div>
 
 <div class="section-tertiary text-center contact-banner" id="contact">
-  <h2>{{site.data.contact.email | remove: "mailto:"}}</h2>
+  <p><strong>Questions? Get in touch!</strong></p>
+  <h2><a href="{{site.data.contact.email}}">{{site.data.contact.email | remove: "mailto:"}}</a></h2>
   <ul class="social-media-list">
     <li class="social-media-list-item">
       <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.twitter}}">
