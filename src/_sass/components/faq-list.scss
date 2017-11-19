@@ -7,24 +7,24 @@
   flex-wrap: wrap;
 }
 
-.faq-list-item {
+.faq-list .faq-list-item {
   margin-bottom: 2rem;
 }
 
-.faq-list-question {
+.faq-list .faq-list-question {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.faq-list-answer {
+.faq-list .faq-list-answer {
   margin: 0;
 }
 
 @media (min-width: #{map-get($breakpoints, lg)}) {
-  .faq-list-item {
+  .faq-list .faq-list-item {
     width: calc(50% - 2.5rem);
   }
-  .faq-list-item:nth-child(odd) {
+  .faq-list .faq-list-item:nth-child(odd) {
     margin-right: 5rem;
   }
 }

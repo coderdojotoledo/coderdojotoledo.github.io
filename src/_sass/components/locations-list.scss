@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.locations-list-item {
+.locations-list .locations-list-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,11 +21,11 @@
   position: relative;
 }
 
-.locations-list-item * {
+.locations-list .locations-list-item * {
   position: relative;
 }
 
-.locations-list-item::before {
+.locations-list .locations-list-item::before {
   content: '';
   position: absolute;
   top: 0;
@@ -36,20 +36,20 @@
 }
 
 @media (min-width: #{map-get($breakpoints, lg)}) {
-  .locations-list-item {
+  .locations-list .locations-list-item {
     max-width: calc(50% - 4rem);
   }
 }
 
-.location-name {
+.locations-list .location-name {
   font-weight: 200;
 }
 
-.location-address {
+.locations-list .location-address {
 
 }
 
-.locations-list-item.locations-redsson-25-huron::before {
+.locations-list .locations-list-item.locations-redsson-25-huron::before {
   background: url('/img/locations/locations-redsson-25-huron.jpg') center center no-repeat;
   background-size: cover;
 }
