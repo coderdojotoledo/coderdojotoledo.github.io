@@ -117,17 +117,7 @@ homepage: true
     <p class="section-introduction">
       Here are the upcoming sessions. No RSVP or registration necessary, just show up and we'll get you started!
     </p>
-    <div class="row">
-      {% for event in site.data.events %}
-        <div class="col-sm-12 col-md-6 col-xl-4">
-          <div class="event-item event-{{event.location | slugify}}">
-            <h4 class="event-name">{{event.name}}</h4>
-            <p class="event-details">{{event.address}}, <time>{{event.time}}</time></p>
-            <a class="btn btn-outline-light" target="_blank" href="{{event.more}}">More Info</a>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+    <div class="row" id="eventsDiv"></div>
     <a class="btn btn-lg btn-outline-dark" target="_blank" href="http://toledotechevents.org/events/tag/coderdojo">See All Upcoming Events</a>
   </div>
 </div>

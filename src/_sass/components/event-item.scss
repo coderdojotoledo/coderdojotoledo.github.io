@@ -34,7 +34,11 @@
 
 }
 
-.event-item.event-redsson-25-huron::before {
+#eventsDiv > *:nth-child(3) ~ * {
+  display: none;
+}
+
+.event-item.event-25-huron-redssons-office-25-s-huron-toledo-oh-43604-us::before {
   background: url('/img/locations/locations-redsson-25-huron.jpg') center center no-repeat;
   background-size: cover;
 }
