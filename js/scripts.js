@@ -38,3 +38,40 @@ var youtubeVideoEmbed = function() {
   }
 
 }();
+
+var eventListing = function() {
+
+  "use strict";
+
+  function slugify(text) {
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '-')           // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+      .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+      .replace(/^-+/, '')             // Trim - from start of text
+      .replace(/-+$/, '');            // Trim - from end of text
+  }
+
+  $.get('http://toledotechevents.org/events/search.ics?tag=coderdojo', {}, function (iCalendarData) {
+
+    var jcalData = ICAL.parse(iCalendarData);
+    var comp = new ICAL.Component(jcalData);
+    var unixNow = new Date().getTime() / 1000;
+    var events = comp.getAllSubcomponents("vevent")
+      .map(function (event) { return new ICAL.Event(event); })
+      .filter(function (event) { return event.startDate.toUnixTime() > unixNow; })
+      .slice(0, 3)
+      .map(function (event) {
+        return '<div class="col-sm-12 col-md-6 col-xl-4">' +
+          '<div class="event-item event-' + slugify(event.location) + '"> ' +
+          '<h4 class="event-name">' + event.summary + '</h4> ' +
+          '<p class="event-details">' + event.location + '<br /><time>' + moment.utc(event.startDate.toUnixTime(), "X").format("MMMM D, YYYY, ha - ") + moment.utc(event.endDate.toUnixTime(), "X").format("ha") + '</time></p>' +
+          '<a class="btn btn-outline-light" target="_blank" href="' + event.uid + '">More Info</a>' +
+          '</div>' +
+          '</div>';
+      })
+      .join(' ');
+
+    $("#eventsDiv").html(events);
+  });
+}();
