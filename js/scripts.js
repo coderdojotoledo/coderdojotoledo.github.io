@@ -52,7 +52,7 @@ var eventListing = function() {
       .replace(/-+$/, '');            // Trim - from end of text
   }
 
-  $.get('http://toledotechevents.org/events/search.ics?tag=coderdojo', {}, function (iCalendarData) {
+  $.get('https://toledotechevents.org/events/search.ics?tag=coderdojo', {}, function (iCalendarData) {
 
     var jcalData = ICAL.parse(iCalendarData);
     var comp = new ICAL.Component(jcalData);
