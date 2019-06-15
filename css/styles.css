@@ -329,6 +329,10 @@ body {
   background: url("/img/locations/launchpad-incubation.jpg") center center no-repeat;
   background-size: cover; }
 
+.locations-list .locations-list-item.locations-communica::before {
+  background: url("/img/locations/communica.jpg") center center no-repeat;
+  background-size: cover; }
+
 .faq-list {
   margin: 0 0 -2rem 0;
   padding: 0;
@@ -390,6 +394,10 @@ body {
 
 .event-item.event-launchpad-incubation-1510-n-westwood-ave-toledo-oh-43606-us::before {
   background: url("/img/locations/launchpad-incubation.jpg") center center no-repeat;
+  background-size: cover; }
+
+.event-item.event-communica-aiga-705-monroe-street-toledo-oh-43604-us::before {
+  background: url("/img/locations/communica.jpg") center center no-repeat;
   background-size: cover; }
 
 .event-item {
