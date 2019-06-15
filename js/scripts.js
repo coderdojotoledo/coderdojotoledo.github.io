@@ -56,7 +56,7 @@ var eventListing = function() {
 
     var jcalData = ICAL.parse(iCalendarData);
     var comp = new ICAL.Component(jcalData);
-    var unixNow = new Date().getTime() / 1000 + 57600;
+    var unixNow = new Date().getTime() / 1000 + 86400;
     var events = comp.getAllSubcomponents("vevent")
       .map(function (event) { return new ICAL.Event(event); })
       .filter(function (event) { return event.startDate.toUnixTime() > unixNow; })
